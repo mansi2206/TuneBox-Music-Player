@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TuneBox – Your Music, Your Vibe</title>
+  <link rel="stylesheet" href="style2.css" />
+  <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li class="brand"><img src="logo.png" alt="TuneBox" /> TuneBox</li>
+      <li>Home</li>
+      <li>About</li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="songList">
+      <h1>My Favourite Songs</h1>
+      <div id="songList" class="songItemContainer"></div>
+    </div>
+
+    <!-- <div class="songBanner">
+      <img src="bg.jpg" alt="Banner" />
+    </div> -->
+  </div>
+
+  <div class="bottom">
+    <input type="range" id="progressBar" min="0" value="0" max="100" />
+    <div class="controls">
+      <i class="fas fa-2x fa-step-backward" id="prevBtn"></i>
+      <i class="far fa-3x fa-play-circle" id="playPauseBtn"></i>
+      <i class="fas fa-2x fa-step-forward" id="nextBtn"></i>
+      <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="1" />
+    </div>
+
+    <div class="songInfo">
+      <img src="playing.gif" id="gif" alt="Playing" />
+      <span id="songTitle">Select a song</span>
+      <span id="timeDisplay">0:00 / 0:00</span>
+    </div>
+  </div>
+
+  <script src="script3.js"></script>
+</body>
+</html>
